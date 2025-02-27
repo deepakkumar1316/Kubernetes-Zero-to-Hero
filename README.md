@@ -90,4 +90,6 @@ After a few mins, run the below command to verify the cluster installation.
 ```
 kops validate cluster demok8scluster.k8s.local
 ```
+To configure Route53 use the below command(replace the dev.example.com to the domain as needed)
 
+aws route53 create-hosted-zone --name dev.example.com --caller-reference 1
